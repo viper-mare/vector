@@ -36,6 +36,7 @@ void app_main(void)
         printf("Get flash size failed");
         return;
     }
+    
 
     printf("%" PRIu32 "MB %s flash\n", flash_size / (uint32_t)(1024 * 1024),
            (chip_info.features & CHIP_FEATURE_EMB_FLASH) ? "embedded" : "external");
